@@ -1,0 +1,113 @@
+/* Container for home page */
+.home-page {
+    background-color: #f4f4f9; 
+    padding: 40px;
+    min-height: 100vh;
+  }
+  
+  /* Header title */
+  .home-header {
+    background-color: #CB80AB; 
+    color: white;
+    padding: 40px 0;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .home-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    background-attachment: fixed;
+    color: #34495e;
+  }
+  
+  .home-header p {
+    font-size: 1.5rem;
+    color: #34495e;
+  }
+  
+  /* Book list container */
+  .book-list-container {
+    padding: 20px;
+    background-color: whitesmoke; 
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Book card styling */
+  .book-card {
+    background-color: #E6D9A2;
+    border: 1px solid #dddddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px black;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .book-card:hover {
+    background-color: #f1f1f1; 
+    transform: translateY(-5px); 
+  }
+  
+  /* Book title */
+  .book-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #34495e;
+  }
+  
+  /* Remove button with trash bin icon */
+  .remove-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .remove-button:hover {
+    background-color: #c0392b;
+  }
+  
+  .remove-button i {
+    margin-right: 8px; /* Space between icon and text */
+  }
+  
+  /* Fade-out animation for removing a book */
+  .fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .home-header h1 {
+      font-size: 2rem;
+    }
+  
+    .home-header p {
+      font-size: 1.2rem;
+    }
+  
+    .book-card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .remove-button {
+      margin-top: 10px;
+      align-self: flex-end;
+    }
+  }
+  

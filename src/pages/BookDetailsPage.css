@@ -1,0 +1,91 @@
+/* Main container for book details */
+.book-details-container {
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center; 
+  }
+  
+  /* Title styling */
+  .book-details-title {
+    font-size: 2.5rem;
+    color: blue; 
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Author and genre styling */
+  .book-details-info {
+    font-size: 1.2rem;
+    color: #7f8c8d; 
+    margin-bottom: 20px;
+  }
+  
+  /* Book description */
+  .book-details-description {
+    font-size: 1rem;
+    color: #34495e; 
+    margin-bottom: 20px;
+    line-height: 1.6; 
+    text-align: left;
+  }
+  
+  /* Rating and publication year */
+  .book-details-meta {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+  }
+  
+  /* Add to library button */
+  .book-details-button {
+    background-color: #27ae60; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .book-details-container{
+    background-color: lightcyan ;
+  }
+  
+  .book-details-button:hover {
+    background-color: #229954; 
+  }
+  
+  /* Button disabled state */
+  .book-details-button:disabled {
+    background-color: #95a5a6; 
+    cursor: not-allowed;
+  }
+  
+  /* Add responsive behavior */
+  @media (max-width: 768px) {
+    .book-details-container {
+      padding: 15px;
+    }
+  
+    .book-details-title {
+      font-size: 2rem;
+    }
+  
+    .book-details-description {
+      font-size: 0.9rem;
+    }
+  
+    .book-details-meta {
+      font-size: 1rem;
+    }
+  
+    .book-details-button {
+      padding: 8px 16px;
+      font-size: 1rem;
+    }
+  }
+  

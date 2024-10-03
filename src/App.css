@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+/* src/App.css */
+
+/* Global styles */
+body {
+  background-color: lightblue; /* Light background for the app */
+  font-family: 'Arial', sans-serif;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header */
+h1, h2, h3, h4, h5, h6 {
+  color: #2c3e50; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Search bar styling */
+input.form-control {
+  border: 2px solid #2c3e50;
+  border-radius: 6px;
+  padding: 8px;
+  margin-bottom: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Container for the app */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Book card styling */
+.book-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff; /* White background for book card */
+  padding: 16px;
+  margin-bottom: 16px;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.book-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #eaf2f8; /* Light blue when hovering over the card */
+}
+
+/* Card title and details */
+.book-card h5 {
+  color: #34495e; /* Darker color for the book title */
+  font-weight: bold;
+}
+
+.book-card h6 {
+  color: #7f8c8d; /* Subtle color for author names */
+}
+
+.book-card p {
+  color: #7f8c8d; /* Lighter color for book details */
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: #3498db; /* Primary blue button */
+  border-color: #2980b9;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+  border-color: #1a5276;
+}
+
+/* My Library list items */
+.list-group-item {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+}
+
+.list-group-item:hover {
+  background-color: #f1f1f1; /* Light grey hover effect */
+}
+
+.btn-danger {
+  background-color: #e74c3c; /* Red for remove buttons */
+  border-color: #c0392b;
+}
+
+.btn-danger:hover {
+  background-color: #c0392b;
+  border-color: #922b21;
+}
+
+/* Book Details Page */
+.book-details {
+  background-color: #ffffff; /* White background for details */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  color: #34495e;
+}
+
+.book-details h1 {
+  color: #2c3e50;
+}
+
+.book-details p {
+  color: #7f8c8d;
+  margin-bottom: 15px;
+}
+
+.book-details button {
+  background-color: #27ae60; /* Green button for adding to library */
+  border-color: #229954;
+}
+
+.book-details button:hover {
+  background-color: #229954;
+  border-color: #1e8449;
+}
+
+/* Error message styling */
+.error-message {
+  color: #e74c3c;
+  font-weight: bold;
 }
